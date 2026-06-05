@@ -1,0 +1,92 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Main Header Box */
+#d_h1{
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    margin-bottom: 25px;
+    backdrop-filter: blur(8px);
+}
+
+/* Heading */
+#d_h1 h1{
+    font-size: 42px;
+    color: #00ffd5;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Paragraph Box */
+#d_p1{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.8;
+    font-size: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+}
+
+/* Buttons */
+button{
+    border: none;
+    background: none;
+    margin: 8px;
+}
+
+/* Link Button */
+a{
+    display: inline-block;
+    text-decoration: none;
+    background: #00ffd5;
+    color: #111;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+a:hover{
+    background: white;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Footer Container */
+#d_f1{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #ddd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

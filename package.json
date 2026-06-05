@@ -1,0 +1,20 @@
+{
+  "name": "shivansh",
+  "version": "1.0.0",
+  "description": "This is my mini project dreated my shivansh tripathi",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Shivansh",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "npm start"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
+}
