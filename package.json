@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "This is my mini project dreated my shivansh tripathi",
   "keywords": [],
+  "homepage": "https://github.com/Shivansh-Tripathi-01/intro1#readme",
+  "bugs": {
+    "url": "https://github.com/Shivansh-Tripathi-01/intro1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivansh-Tripathi-01/intro1.git"
+  },
   "license": "ISC",
   "author": "Shivansh",
   "type": "commonjs",
@@ -13,6 +21,7 @@
     "dev": "npm start"
   },
   "dependencies": {
+    "ejs": "^6.0.1",
     "express": "^5.2.1",
     "nodemon": "^3.1.14"
   },

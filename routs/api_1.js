@@ -4,7 +4,7 @@ const path = require('path');
 
 
 router.get('/currencyconverter', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/currency_conv.html'));
+    res.render('public/currency_conv.ejs');
 });
 
 module.exports = router;
