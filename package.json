@@ -1,29 +1,20 @@
 {
   "name": "shivansh",
   "version": "1.0.0",
-  "description": "This is my mini project dreated my shivansh tripathi",
-  "keywords": [],
-  "homepage": "https://github.com/Shivansh-Tripathi-01/intro1#readme",
-  "bugs": {
-    "url": "https://github.com/Shivansh-Tripathi-01/intro1/issues"
-  },
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shivansh-Tripathi-01/intro1.git"
+    "url": "(https://github.com/Shivansh-Tripathi-01/shivanshgroup.git)"
   },
   "license": "ISC",
-  "author": "Shivansh",
+  "author": "",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "npm start"
+    "start": "node server.js"
   },
   "dependencies": {
-    "ejs": "^6.0.1",
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14"
-  },
-  "devDependencies": {}
+    "express": "^5.2.1"
+  }
 }
