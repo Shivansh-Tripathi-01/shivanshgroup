@@ -1,3 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
+    min-height: 100vh;
+    margin: 0;
+    padding: clamp(18px, 6vw, 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(14px, 4vw, 24px);
     background-color: pink;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.d1 h4{
+    margin: 0;
+    font-size: clamp(28px, 9vw, 54px);
+}
+
+.d2{
+    font-size: clamp(24px, 8vw, 48px);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.dp{
+    max-width: 620px;
+    font-size: clamp(16px, 4vw, 20px);
+    line-height: 1.6;
+}
+
+#a a{
+    display: inline-block;
+    max-width: 100%;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 480px){
+    #a,
+    #a a{
+        width: 100%;
+    }
 }

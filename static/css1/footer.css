@@ -1,8 +1,8 @@
 .footer {
     background: #212529;
     color: white;
-    padding-top: 40px;
-    margin-top: 50px;
+    padding-top: clamp(28px, 6vw, 40px);
+    margin-top: clamp(32px, 7vw, 50px);
 }
 
 .footer-container {
@@ -11,10 +11,12 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
 .footer-section {
+    flex: 1 1 220px;
     margin-bottom: 20px;
 }
 
@@ -45,4 +47,16 @@
     border-top: 1px solid #444;
     padding: 15px;
     margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+    .footer-container {
+        width: min(92%, 420px);
+        display: block;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 26px;
+    }
 }

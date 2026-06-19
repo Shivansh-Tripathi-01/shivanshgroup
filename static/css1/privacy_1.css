@@ -14,14 +14,19 @@ header{
     background:#1f2937;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:clamp(16px, 5vw, 20px);
+}
+
+header h1{
+    font-size: clamp(28px, 8vw, 40px);
+    overflow-wrap: anywhere;
 }
 
 .container{
-    max-width:900px;
-    margin:40px auto;
+    width:min(92%, 900px);
+    margin:clamp(20px, 6vw, 40px) auto;
     background:white;
-    padding:30px;
+    padding:clamp(20px, 5vw, 30px);
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
@@ -29,6 +34,7 @@ header{
 h2{
     text-align:center;
     margin-bottom:10px;
+    font-size: clamp(26px, 7vw, 36px);
 }
 
 .last-updated{
@@ -44,6 +50,7 @@ h2{
 .policy-section h3{
     color:#1f2937;
     margin-bottom:10px;
+    font-size: clamp(20px, 5vw, 24px);
 }
 
 .policy-section p,
@@ -64,6 +71,7 @@ button{
     cursor:pointer;
     margin-top:10px;
     transition:0.3s;
+    max-width:100%;
 }
 
 button:hover{
@@ -80,7 +88,16 @@ footer{
 
 @media(max-width:768px){
     .container{
-        width:95%;
         padding:20px;
+    }
+}
+
+@media(max-width:480px){
+    ul{
+        margin-left:18px;
+    }
+
+    button{
+        width:100%;
     }
 }

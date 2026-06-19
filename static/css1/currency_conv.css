@@ -6,17 +6,18 @@
 }
 
 body{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: clamp(16px, 5vw, 32px);
 }
 
 .converter{
   background: white;
-  width: 350px;
-  padding: 30px;
+  width: min(100%, 350px);
+  padding: clamp(20px, 6vw, 30px);
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -25,6 +26,7 @@ body{
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  font-size: clamp(24px, 7vw, 30px);
 }
 
 .input-group{
@@ -66,7 +68,24 @@ button:hover{
 .result{
   margin-top: 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: clamp(18px, 5vw, 20px);
   font-weight: bold;
   color: #222;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px){
+  body{
+    align-items: flex-start;
+  }
+
+  .converter{
+    border-radius: 12px;
+  }
+
+  input,
+  select,
+  button{
+    font-size: 16px;
+  }
 }
