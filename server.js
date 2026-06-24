@@ -4,7 +4,7 @@ const path = require('path');
 const qrcode = require('qrcode');
 const connectDB = require('./config/db_1');
 
-const port = process.env.PORT || 4785;
+const port = process.env.PORT || 17217;
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
