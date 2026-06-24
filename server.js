@@ -4,7 +4,7 @@ const path = require('path');
 const qrcode = require('qrcode');
 const connectDB = require('./config/db_1');
 
-const port = process.env.PORT || 17217;
+const port = process.env.PORT || 47217;
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
@@ -32,6 +32,11 @@ app.use("/assets", express.static("assets"));
 
 app.use((req,res) => {
     res.render('public/404')
+})
+
+app.get('/ads.txt', (req,res) => {
+  res.type('text/plain');
+  res.send('google.com, pub-5814413513393088, DIRECT, f08c47fec0942fa0')
 })
 
 const startServer = () => {
