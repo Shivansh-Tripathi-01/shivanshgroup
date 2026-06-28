@@ -3,13 +3,14 @@ const app = express();
 const path = require('path');
 const qrcode = require('qrcode');
 
-
 const port = process.env.PORT || 47217;
 const adsTxt = 'google.com, pub-5814413513393088, DIRECT, f08c47fec0942fa0\n';
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/ads.txt', (req,res) => {
   res.type('text/plain');
