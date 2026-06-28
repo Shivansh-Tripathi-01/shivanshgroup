@@ -5,10 +5,16 @@ const qrcode = require('qrcode');
 
 
 const port = process.env.PORT || 47217;
+const adsTxt = 'google.com, pub-5814413513393088, DIRECT, f08c47fec0942fa0\n';
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.get('/ads.txt', (req,res) => {
+  res.type('text/plain');
+  res.send(adsTxt);
+});
 
 const main = require('./routs/main_1');
 app.use("/", main);
@@ -29,11 +35,6 @@ app.use("/static", express.static("static"));
 app.use("/assets", express.static("assets")); 
 
 const connectDB = require('./config/db_1');
-
-app.get('/ads.txt', (req,res) => {
-  res.type('text/plain');
-  res.send('google.com, pub-5814413513393088, DIRECT, f08c47fec0942fa0\n');
-});
 
 app.use((req,res) => {
     res.status(404).render('public/404')
