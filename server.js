@@ -30,14 +30,14 @@ app.use("/assets", express.static("assets"));
 
 const connectDB = require('./config/db_1');
 
-app.use((req,res) => {
-    res.render('public/404')
-})
-
 app.get('/ads.txt', (req,res) => {
   res.type('text/plain');
-  res.send('google.com, pub-5814413513393088, DIRECT, f08c47fec0942fa0')
-})
+  res.send('google.com, pub-5814413513393088, DIRECT, f08c47fec0942fa0\n');
+});
+
+app.use((req,res) => {
+    res.status(404).render('public/404')
+});
 
 const startServer = () => {
   app.listen(port, '0.0.0.0', () => {
