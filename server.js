@@ -10,12 +10,12 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'public')));
-
 app.get('/ads.txt', (req,res) => {
   res.type('text/plain');
   res.send(adsTxt);
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 const main = require('./routs/main_1');
 app.use("/", main);
