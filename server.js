@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const qrcode = require('qrcode');
-const connectDB = require('./config/db_1');
+
 
 const port = process.env.PORT || 47217;
 
@@ -28,7 +28,7 @@ app.use('/qr',qr);
 app.use("/static", express.static("static"));
 app.use("/assets", express.static("assets")); 
 
-//connectDB()
+const connectDB = require('./config/db_1');
 
 app.use((req,res) => {
     res.render('public/404')
